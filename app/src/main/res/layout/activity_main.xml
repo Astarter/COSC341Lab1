@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/TV_Banana"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Apple" />
+
+    <TextView
+        android:id="@+id/TV_Orange"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Banana" />
+
+    <TextView
+        android:id="@+id/TV_Pear"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/pear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Orange" />
+
+    <TextView
+        android:id="@+id/TV_Apple"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BananaPrice"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="@string/BananaPrice"
+        app:layout_constraintStart_toEndOf="@+id/TV_Banana"
+        app:layout_constraintTop_toBottomOf="@+id/ApplePrice" />
+
+    <TextView
+        android:id="@+id/PearPrice"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="@string/PearPrice"
+        app:layout_constraintStart_toEndOf="@+id/TV_Pear"
+        app:layout_constraintTop_toBottomOf="@+id/OrangePrice" />
+
+    <TextView
+        android:id="@+id/OrangePrice"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="@string/OrangePrice"
+        app:layout_constraintStart_toEndOf="@+id/TV_Orange"
+        app:layout_constraintTop_toBottomOf="@+id/BananaPrice" />
+
+    <TextView
+        android:id="@+id/ApplePrice"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="@string/PearPrice"
+        app:layout_constraintStart_toEndOf="@+id/TV_Apple"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/OrangePrice"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/PearPrice"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="173dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BananaPrice"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ApplePrice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/ButtonConfirm"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TotalPrice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonConfirm"
+        app:layout_constraintVertical_bias="0.117" />
+
+
+</android.support.constraint.ConstraintLayout>
